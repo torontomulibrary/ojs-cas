@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/implicitAuth/cas/version.xml
+  *
+  * Copyright (c) 2013 Steven Marsden
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  -->
+<version>
+	<application>cas</application>
+	<type>plugins.implicitAuth</type>
+	<release>1.0.0.0</release>
+	<date>203-04-15</date>
+	<sitewide>1</sitewide>
+</version>
