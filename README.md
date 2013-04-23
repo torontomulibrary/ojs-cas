@@ -1,7 +1,10 @@
-This document describes the config parameters that control the implicit authentication plugin in OJS. It does not describe how to set up CAS based authentication.
-
-SETUP
+OJS-CAS
 =======
+
+OJS-CAS is a plugin for [Open Journal Systems](http://pkp.sfu.ca/ojs/) that integrates the [Central Authentication Service](http://www.jasig.org/cas) (CAS) protocol via OJS' implicit authentication mechanism.  This document describes the config parameters that control the implicit authentication plugin in OJS. It does not describe how to set up CAS based authentication.
+
+Setup
+-----
 
 1.	Place plug-in in "plugins/implicitAuth" relative to your OJS install.
 
@@ -13,7 +16,7 @@ SETUP
 
 
 OJS Config File
-===============
+---------------
 
 In the [security] section of the config.inc.php file there are several parameters that affect the operation of the implicit auth plugin. They are all commented out - by default. They are shown here with their default settings like they are in the config file. When you enable implicit auth - you should uncomment all of these variables.
 
@@ -30,6 +33,11 @@ The implicit_auth_admin_list is a blank delimited list of email addresses that s
 
     implicit_auth_admin_list = "jdoe@email.ca jshmo@email.ca"
 
-The implicit_auth_wayf_url is the URL of the CAS Authentication page. This should point to the casAuth.php file in the cas plugin folder.
+The implicit_auth_wayf_url is the URL of the CAS Authentication page. This should point to the casAuth.php file in the cas plugin folder, relative to the web server's root.
 
     implicit_auth_wayf_url = "/ojs/plugins/implicitAuth/cas/casAuth.php"
+
+LICENSE
+-------
+
+This plugin is licensed under the terms of the [MIT Free Software license](http://en.wikipedia.org/wiki/MIT_License).  See the file LICENSE for more information.
